@@ -1,11 +1,21 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 
 const AboutDetails = () => {
+  const router = useRouter();
+
   return (
     <section className="bg-gradient-to-b from-white to-gray-100 py-16 px-4 sm:py-20 sm:px-8">
-      {/* Heading */}
-      <div className="text-center mb-12">
+       <button
+        onClick={() => router.push("/")}
+        className="absolute top-4 left-4 bg-[#174A7D] text-white p-3 rounded-full hover:bg-blue-800 transition shadow-md"
+      >
+        <ArrowLeft className="w-6 h-6" />
+      </button>
+      <div className="text-center mb-12 top-8">
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#174A7D]"
           style={{ textShadow: "6px 5px 6px lightgrey" }}
@@ -13,9 +23,7 @@ const AboutDetails = () => {
           About Our Child Care Hospital
         </h1>
       </div>
-
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
-        {/* Left Section: Text Content */}
         <div className="lg:w-1/2 text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#174A7D] leading-tight px-4 sm:px-8 lg:px-20 py-4 sm:py-6">
             Providing Exceptional Pediatric Care
@@ -27,13 +35,11 @@ const AboutDetails = () => {
             in a caring and comforting environment.
           </p>
         </div>
-
-        {/* Right Section: Image */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 relative">
           <div className="relative w-full max-w-md mx-auto">
             <div className="rounded-lg overflow-hidden border-4 border-[#B0DEEF] shadow-lg">
               <img
-                src="https://apexgroupofhospitals.com/wp-content/uploads/child_care_plus.jpg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJVOXEu1cYegzv2whlFOgJjBWNBVqHCYqJ7kuME0WiOn3YovrWICvo1tPgGuajFO24lbI&usqp=CAU"
                 alt="Child Care Hospital"
                 className="w-full h-auto"
               />
@@ -41,8 +47,6 @@ const AboutDetails = () => {
           </div>
         </div>
       </div>
-
-      {/* Our Mission Section */}
       <div className="mt-16">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
           {/* Left Section: Image */}
@@ -50,15 +54,13 @@ const AboutDetails = () => {
             <div className="relative w-full max-w-md mx-auto">
               <div className="rounded-lg overflow-hidden border-4 border-[#B0DEEF] shadow-lg">
                 <img
-                  src="https://www.childrenshospital.org/sites/default/files/styles/story_image_large_800x500_/public/2021-10/childrens-medical-center.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSCTrS7LIC04SHeKtUxvWnl9oBtdNP6yRcD24IBwMjpLHgdQRDNFumpHtj8LzQqotXNLY&usqp=CAU"
                   alt="Child Care Services"
                   className="w-full h-auto"
                 />
               </div>
             </div>
           </div>
-
-          {/* Right Section: Text Content */}
           <div className="lg:w-1/2 text-left">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#174A7D] leading-tight px-4 sm:px-8 lg:px-20 py-4 sm:py-6">
               Our Mission
@@ -72,8 +74,6 @@ const AboutDetails = () => {
           </div>
         </div>
       </div>
-
-      {/* Why Choose Us Section */}
       <div className="mt-16 text-center">
         <h2 className="text-3xl font-bold text-[#174A7D]">
           Why Choose Our Hospital?
@@ -86,16 +86,12 @@ const AboutDetails = () => {
               Our team consists of highly skilled doctors specializing in child healthcare.
             </p>
           </div>
-
-          {/* Feature 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md border border-[#B0DEEF]">
             <h3 className="text-xl font-semibold text-[#174A7D]">24/7 Emergency Care</h3>
             <p className="text-[#174A7D] mt-2">
               We provide round-the-clock emergency services for immediate assistance.
             </p>
           </div>
-
-          {/* Feature 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md border border-[#B0DEEF]">
             <h3 className="text-xl font-semibold text-[#174A7D]">Child-Friendly Environment</h3>
             <p className="text-[#174A7D] mt-2">
@@ -103,16 +99,6 @@ const AboutDetails = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      {/* Call to Action */}
-      <div className="mt-16 text-center">
-        <Link
-          href="/appointments"
-          className="inline-block bg-[#174A7D] text-white text-lg px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
-        >
-          Book an Appointment
-        </Link>
       </div>
     </section>
   );
