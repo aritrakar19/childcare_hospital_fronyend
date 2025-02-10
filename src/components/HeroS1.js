@@ -11,8 +11,8 @@ function HeroS1() {
         {/* Text Section */}
         <div className="lg:w-1/2 px-6 lg:px-12 text-center lg:text-left">
           <h2 className="text-4xl font-light lg:px-20">
-            We're  <span className="font-bold text-[#174A7D]">here</span>{" "}
-            for every <span className="font-bold text-[#174A7D]">little smile.</span>{" "} 
+          <strong>We're</strong>  <span className="font-bold text-[#174A7D]">here</span>{" "}
+            <strong>for every </strong><span className="font-bold text-[#174A7D]">little smile.</span>{" "} 
             
           </h2>
           <p className="mt-4 text-lg text-[#174A7D] lg:px-20">
