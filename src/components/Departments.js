@@ -73,7 +73,6 @@ const Departments = () => {
       </section>
 
       <section className="relative bg-[#1C6BA4] text-white py-16 px-6 lg:px-24 flex flex-col lg:flex-row items-center justify-center gap-8">
-        {/* Left Side Image with Styled Border */}
         <div className="relative w-full max-w-md lg:max-w-lg">
           <div className="absolute -bottom-4 -left-4 w-full h-full border-4 border-[#A6C9E5] rounded-xl"></div>
           <img
@@ -83,7 +82,6 @@ const Departments = () => {
           />
         </div>
 
-        {/* Right Side Content */}
         <div className="text-center lg:text-left max-w-lg">
           <h2 className="text-3xl lg:text-4xl font-bold">
             Eye Care with Top Professionals <br /> and In Budget.
@@ -93,12 +91,8 @@ const Departments = () => {
             and personalized care for vision problems, ensuring your child's
             healthy eyesight and bright future.{" "}
           </p>
-          {/* <button className="mt-6 bg-white text-[#1C6BA4] font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-200 transition">
-            Learn more
-          </button> */}
         </div>
 
-        {/* Background Circle Dots Design */}
         <div className="absolute top-10 left-5 lg:left-16 grid grid-cols-4 gap-2 opacity-40">
           {[...Array(12)].map((_, i) => (
             <div

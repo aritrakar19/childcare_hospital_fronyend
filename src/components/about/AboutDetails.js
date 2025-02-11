@@ -18,7 +18,7 @@ const AboutDetails = () => {
       <div className="text-center mb-12 top-8">
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#174A7D]"
-          style={{ textShadow: "6px 5px 6px lightgrey" }}
+          style={{ textShadow: "6px 5px 6px lightgrey", marginTop: "20px" }}
         >
           About Our Child Care Hospital
         </h1>
@@ -49,7 +49,6 @@ const AboutDetails = () => {
       </div>
       <div className="mt-16">
         <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center">
-          {/* Left Section: Image */}
           <div className="lg:w-1/2 mt-8 lg:mt-0 relative">
             <div className="relative w-full max-w-md mx-auto">
               <div className="rounded-lg overflow-hidden border-4 border-[#B0DEEF] shadow-lg">
@@ -79,7 +78,6 @@ const AboutDetails = () => {
           Why Choose Our Hospital?
         </h2>
         <div className="container mx-auto mt-8 grid md:grid-cols-3 gap-6 px-4 sm:px-8">
-          {/* Feature 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md border border-[#B0DEEF]">
             <h3 className="text-xl font-semibold text-[#174A7D]">Expert Pediatricians</h3>
             <p className="text-[#174A7D] mt-2">

@@ -1,29 +1,21 @@
 "use client";
 
 import React from "react";
-// import { useRouter } from "next/navigation";  
+// import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
-  weight: ["400", "500", "700"], // Adjust according to the required font weights
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
 });
 
 const About = () => {
-  // const router = useRouter();
-
-  // const handleLearnMore = () => {
-  //   // Programmatically navigate to the details page
-  //   router.push("/aboutdetails");
-  // };
-
   return (
     <section
       id="about"
       className="bg-gradient-to-b from-white to-gray-100 py-16 px-4 sm:py-20 sm:px-8"
     >
-      {/* Top Heading */}
       <div className="text-center mb-8 sm:mb-12">
         <h1
           className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#174A7D]"
@@ -34,16 +26,15 @@ const About = () => {
       </div>
 
       <div className="container mx-auto flex flex-col lg:flex-row items-center">
-        {/* Left Section: Text Content */}
         <div className="lg:w-1/2 text-left">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#174A7D] leading-tight px-4 sm:px-8 lg:px-20 py-4 sm:py-6">
             Innovating healthcare for a healthier tomorrow
           </h2>
           <p className="text-base sm:text-lg text-[#174A7D] px-4 sm:px-8 lg:px-20 py-4 sm:py-6">
-            At KiddieCare, we provide expert pediatric care in a
-            compassionate, family-centered environment. Our dedicated team
-            offers every time support, ensuring your child receives personalized
-            treatment and care for a healthier future.
+            At KiddieCare, we provide expert pediatric care in a compassionate,
+            family-centered environment. Our dedicated team offers every time
+            support, ensuring your child receives personalized treatment and
+            care for a healthier future.
           </p>
           {/* <div className="mt-8 mb-4 text-center sm:text-left lg:px-20">
             <button
@@ -54,12 +45,12 @@ const About = () => {
             </button>
           </div> */}
           <div className="mt-8 mb-4 text-center sm:text-left lg:px-20">
-  <Link href="/about-details">
-    <button className="cursor-pointer inline-block border-2 border-[#174A7D] text-[#174A7D] text-lg px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
-      Learn More
-    </button>
-  </Link>
-</div>
+            <Link href="/about-details">
+              <button className="cursor-pointer inline-block border-2 border-[#174A7D] text-[#174A7D] text-lg px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+                Learn More
+              </button>
+            </Link>
+          </div>
         </div>
 
         <div className="lg:w-1/2 mt-8 lg:mt-0 relative">
@@ -71,7 +62,6 @@ const About = () => {
                 className="w-full h-auto rounded-full"
               />
             </div>
-            {/* Circle Decor on the Image */}
             <div className="absolute top-0 right-0 w-20 h-20 sm:w-40 sm:h-40 border border-[#B0DEEF] rounded-full"></div>
           </div>
         </div>

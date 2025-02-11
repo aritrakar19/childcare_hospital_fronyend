@@ -22,7 +22,6 @@ function HeroS1() {
           At our childcare hospital, compassionate professionals provide expert pediatric care in a supportive, family-centered environment.</p>
         </div>
 
-        {/* Image Section */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 lg:px-12 relative">
           <div className="rounded-full overflow-hidden border-8 border-white shadow-lg">
             <img
@@ -43,7 +42,6 @@ function HeroS1() {
         </div>
       </div>
 
-      {/* Decorative Bottom Shape */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-white -skew-y-6 transform translate-y-12"></div>
     </section>
   );

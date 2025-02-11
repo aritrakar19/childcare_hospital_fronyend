@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -45,7 +44,6 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="bg-[#B0DEEF] py-12 px-4 sm:px-8 relative">
-      {/* Heading */}
       <div className="text-center relative">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#174A7D]"
           style={{ textShadow: '2px 2px 4px white' }}
@@ -67,7 +65,6 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index} className="bg-white p-6 md:p-8 rounded-lg shadow-lg">
-              {/* Card Content */}
               <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left space-y-4 sm:space-y-0 sm:space-x-6">
                 <img
                   src={testimonial.image}
@@ -84,7 +81,6 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              {/* Title & Review */}
               <h4 className="mt-4 text-lg sm:text-2xl font-bold text-[#174A7D]">
                 {testimonial.title}
               </h4>

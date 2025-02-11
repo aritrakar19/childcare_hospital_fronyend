@@ -2,15 +2,13 @@
 import React, { useState } from "react";
 
 const ContactUs = () => {
-  const [email, setEmail] = useState(""); // State to hold the email input
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission
+  const [email, setEmail] = useState(""); 
+  const [isSubmitted, setIsSubmitted] = useState(false); 
 
-  // Function to handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submit
+    e.preventDefault();
 
     if (email && validateEmail(email)) {
-      // Make API call to submit the email
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: {
@@ -29,7 +27,6 @@ const ContactUs = () => {
     }
   };
 
-  // Simple email validation function
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
@@ -38,7 +35,6 @@ const ContactUs = () => {
   return (
     <section id="contact" className="bg-[#1E3476] text-white py-12 px-6 sm:px-12">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center sm:justify-between space-y-8 sm:space-y-0">
-        {/* Left Side - Text Content */}
         <div className="text-center sm:text-left max-w-lg">
           <h2 className="text-2xl sm:text-3xl font-bold">Get an update</h2>
           <p className="mt-2 text-gray-300">
@@ -46,7 +42,6 @@ const ContactUs = () => {
           </p>
         </div>
 
-        {/* Right Side - Newsletter Form */}
         <div className="w-full sm:w-auto flex flex-col items-center sm:items-start">
           <label className="text-gray-400 uppercase text-sm font-bold text-center sm:text-left">
             Subscribe to Newsletter
@@ -56,7 +51,7 @@ const ContactUs = () => {
               type="email"
               placeholder="Email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)} // Update the email state
+              onChange={(e) => setEmail(e.target.value)} 
               className="px-4 py-3 w-full sm:w-72 bg-transparent text-white placeholder-gray-400 border border-gray-400 rounded-full focus:outline-none"
             />
             <button

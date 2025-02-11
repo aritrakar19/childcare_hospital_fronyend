@@ -24,10 +24,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#B0DEEF] py-4 px-8 flex justify-between items-center shadow-md md:static fixed top-0 left-0 w-full z-50">
-      {/* Logo */}
       <div className="text-3xl font-bold text-[#174A7D]">KiddieCare</div>
 
-      {/* Desktop Navigation Links */}
       <div className="hidden md:flex space-x-8 text-[#174A7D] text-lg">
         {desktopLinks.map((item, index) => (
           <Link key={index} href={item.href} className="relative group">
@@ -37,16 +35,6 @@ const Navbar = () => {
         ))}
       </div>
 
-      {/* Desktop Sign In Button */}
-      {/* <div className="hidden md:block">
-        <Link href="/signin">
-          <button className="text-[#174A7D] border-2 border-[#174A7D] px-6 py-2 text-lg rounded-full font-bold transition-all duration-300 transform hover:bg-[#174A7D] hover:text-white hover:scale-105">
-            Sign In
-          </button>
-        </Link>
-      </div> */}
-
-      {/* Hamburger Icon for Mobile */}
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-[#174A7D] focus:outline-none">
           {isOpen ? (
@@ -61,7 +49,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`fixed top-0 left-0 w-full bg-[#ddeef4] shadow-md z-40 transition-transform duration-300 transform ${
           isOpen ? "translate-y-0" : "-translate-y-full"
@@ -78,11 +65,6 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-          {/* <Link href="/signin" onClick={() => setIsOpen(false)} className="block w-full text-center py-3">
-            <button className="mx-auto text-[#174A7D] border-2 border-[#174A7D] px-6 py-2 text-lg rounded-full font-bold transition-all duration-300 transform hover:bg-[#174A7D] hover:text-white">
-              Sign In
-            </button>
-          </Link> */}
         </div>
       </div>
     </nav>
