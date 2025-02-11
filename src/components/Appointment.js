@@ -42,8 +42,7 @@ function Appointment() {
       </div>
 
       {/* Appointment Form Section */}
-      <div className="w-full max-w-6xl bg-white shadow-lg rounded-lg p-4 sm:p-6 md:p-10 flex flex-col lg:flex-row items-center">
-        {/* Left Side - Image (Visible on Larger Screens) */}
+      <div className="sm:p-6 md:p-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 mb-6 lg:mb-0 flex justify-center">
           <img
             src="https://technext.github.io/live-doc/v1.0.0/assets/img/gallery/appointment.png"
