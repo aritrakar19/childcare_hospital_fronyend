@@ -31,7 +31,6 @@ function Appointment() {
 
   return (
     <section id="appointment" className="flex flex-col items-center justify-center bg-gray-100 px-4 py-12">
-      {/* Title Section */}
       <div className="text-center mb-8 relative">
         <h3
           className="relative text-2xl sm:text-3xl md:text-4xl font-bold text-[#174A7D] uppercase mb-6 z-10"
@@ -40,8 +39,6 @@ function Appointment() {
           Appointment
         </h3>
       </div>
-
-      {/* Appointment Form Section */}
       <div className="sm:p-6 md:p-10 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-1/2 mb-6 lg:mb-0 flex justify-center">
           <img
@@ -50,8 +47,6 @@ function Appointment() {
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full h-auto object-cover rounded-md"
           />
         </div>
-
-        {/* Right Side - Form */}
         <div className="w-full lg:w-1/2 p-2 sm:p-4">
           <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
@@ -72,7 +67,6 @@ function Appointment() {
               className="border border-gray-300 rounded-md p-3 w-full focus:outline-none"
               required
             />
-
             <select
               name="category"
               value={formData.category}
@@ -89,7 +83,6 @@ function Appointment() {
               <option value="ENT">ENT</option>
               <option value="Others">Others</option>
             </select>
-
             <input
               type="email"
               name="email"
@@ -99,8 +92,6 @@ function Appointment() {
               className="border border-gray-300 rounded-md p-3 w-full focus:outline-none"
               required
             />
-
-            {/* Message field - Full width */}
             <div className="col-span-1 sm:col-span-2">
               <textarea
                 name="message"
@@ -111,8 +102,6 @@ function Appointment() {
                 rows="4"
               ></textarea>
             </div>
-
-            {/* Submit button - Full width */}
             <div className="col-span-1 sm:col-span-2">
               <button
                 type="submit"
@@ -124,8 +113,6 @@ function Appointment() {
           </form>
         </div>
       </div>
-
-      {/* Toast Notifications */}
       <ToastContainer />
     </section>
   );
